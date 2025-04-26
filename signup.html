@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Actresses Switch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Raleway:wght@300;500;700&family=Satisfy&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #ffc0cb;
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 42px;
+      background: url('924e28cd9aa265267bda9e35790824c1.jpg') no-repeat center/cover;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 60px;
+      width: fit-content;
+      margin: 0 auto 50px;
+      box-shadow: 0 0 20px #c6455c80;
+    }
+
+    .avatars-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .avatar-block {
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .avatar-block:hover {
+      transform: scale(1.08);
+    }
+
+    .avatar-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 10px;
+    }
+
+    .avatar-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .main-image {
+      box-shadow: 0 0 15px #c6455c;
+    }
+
+    .hover-image {
+      opacity: 0;
+      transform: scale(1);
+      filter: drop-shadow(0 0 12px #c6455c);
+    }
+
+    .avatar-block:hover .hover-image {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    .avatar-block:hover .main-image {
+      opacity: 0;
+    }
+
+    h2 {
+      font-family: "Satisfy", cursive;
+      color: #c6455c;
+      margin: 10px 0 0;
+      font-size: 22px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 12px #c6455c;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-image: url('924e28cd9aa265267bda9e35790824c1.jpg');
+      background-size: cover;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px 20px;
+      font-family: "Satisfy", cursive;
+      font-size: 18px;
+      border: 1px solid #c6455c;
+      color: #c6455c;
+    }
+
+    th {
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .avatar-container {
+        width: 150px;
+        height: 150px;
+      }
+
+      h1 {
+        font-size: 32px;
+        padding: 15px 25px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    nav {
+        margin-top: 50px;
+        color:#c6455c;
+    }
+
+    a {
+        color: #c6455c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Your Queen</h1>
+
+  <div class="avatars-wrapper">
+    <!-- Bebo -->
+    <div class="avatar-block" onclick="location.href='new3.html'" role="button" tabindex="0">
+      <div class="avatar-container">
+        <img class="main-image" src="08f2bd4d3a2a59d8ae285aa93649cdb9.jpg" alt="Bebo" />
+        <img class="hover-image" src="08f2bd4d3a2a59d8ae285aa93649cdb9-removebg-preview.png" alt="Bebo Hover" />
+      </div>
+      <h2>Bebo</h2>
+    </div>
+
+    <!-- Kat -->
+    <div class="avatar-block" onclick="location.href='new2.html'" role="button" tabindex="0">
+      <div class="avatar-container">
+        <img class="main-image" src="3227f42f2025211de0f5a110cba5f727.jpg" alt="Kat" />
+        <img class="hover-image" src="3227f42f2025211de0f5a110cba5f727-removebg-preview.png" alt="Kat Hover" />
+      </div>
+      <h2>Kat</h2>
+    </div>
+
+    <!-- Aloo -->
+    <div class="avatar-block" onclick="location.href='new.html'" role="button" tabindex="0">
+      <div class="avatar-container">
+        <img class="main-image" src="7b01c36c06ed8fcf159a8e0fda0db656.jpg" alt="Aloo" />
+        <img class="hover-image" src="7b01c36c06ed8fcf159a8e0fda0db656-removebg-preview.png" alt="Aloo Hover" />
+      </div>
+      <h2>Aloo</h2>
+    </div>
+
+    <!-- Rani -->
+    <div class="avatar-block" onclick="location.href='new4.html'" role="button" tabindex="0">
+      <div class="avatar-container">
+        <img class="main-image" src="3b265a11bf79645185f68be304c16653.jpg" alt="Rani" />
+        <img class="hover-image" src="3b265a11bf79645185f68be304c16653-removebg-preview.png" alt="Rani Hover" />
+      </div>
+      <h2>Rani</h2>
+    </div>
+
+    <!-- Piku -->
+    <div class="avatar-block" onclick="location.href='new5.html'" role="button" tabindex="0">
+      <div class="avatar-container">
+        <img class="main-image" src="8db85e928840eac48759adee15291cc1.jpg" alt="Piku" />
+        <img class="hover-image" src="8db85e928840eac48759adee15291cc1-fotor-bg-remover-20250419232936.png" alt="Piku Hover" />
+      </div>
+      <h2>Piku</h2>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Actresses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Bebo</td></tr>
+      <tr><td>Kat</td></tr>
+      <tr><td>Aloo</td></tr>
+      <tr><td>Rani</td></tr>
+      <tr><td>Piku</td></tr>
+    </tbody>
+  </table>
+
+  <div>
+    <nav>
+        <a href="prsnquiz.html">Personality Quiz</a>
+        <a href="trivia.html">Movie Trivia Quiz</a>
+    </nav>
+</div>
+</body>
+<footer>
+    <p>Made with ❤️ for the queens of Bollywood | © 2025</p>
+</footer>
+</html>

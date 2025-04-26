@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Personality Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Dancing+Script:wght@400..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lobster&family=Luxurious+Roman&family=Ojuju:wght@200..800&family=Playwrite+MX+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet" />
+    <style>
+        body {
+      background-color: #ffc0cb;
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      padding: 50px 20px;
+      text-align: center;
+    }
+        
+        .quiz-container {
+            border-radius: 10px;
+            box-shadow: 0 0 10px #a1353d;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #c6455c;
+            font-family: 'Satisfy';
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .choices {
+            list-style-type: none;
+            padding: 0;
+        }
+        .choices li {
+            margin: 10px 0;
+        }
+        .choices input {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #c6455c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #a1353d;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Which Bollywood Actress Are You?</h1>
+        <form id="quiz-form">
+            <div class="question-container">
+                <p class="question">What's your idea of a perfect weekend?</p>
+                <ul class="choices">
+                    <li><input type="radio" name="q1" value="A"> Spending time with family</li>
+                    <li><input type="radio" name="q1" value="B"> A weekend getaway</li>
+                    <li><input type="radio" name="q1" value="C"> A solo adventure</li>
+                    <li><input type="radio" name="q1" value="D"> Exploring new restaurants</li>
+                </ul>
+            </div>
+            <!-- Add more questions here -->
+            <button type="submit">Find Out Your Bollywood Twin!</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let answers = new FormData(this);
+            let score = 0;
+
+            // You can assign scores based on the choices here
+            if (answers.get('q1') === 'A') score++;
+            // Add conditions for more questions
+
+            if (score >= 1) {
+                alert('You are like Deepika Padukone! 💖');
+            } else {
+                alert('You are like Priyanka Chopra! 💫');
+            }
+        });
+    </script>
+</body>
+</html>

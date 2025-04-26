@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Movie Trivia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Dancing+Script:wght@400..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lobster&family=Luxurious+Roman&family=Ojuju:wght@200..800&family=Playwrite+MX+Guides&family=Raleway:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffc0cb;
+            color: #333;
+            padding: 20px;
+            font-family: "Raleway", sans-serif;
+        }
+        .quiz-container {
+            background-color: #ffc0cb;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #a1353d;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #c6455c;
+            font-family: 'Satisfy';
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .choices {
+            list-style-type: none;
+            padding: 0;
+        }
+        .choices li {
+            margin: 10px 0;
+        }
+        .choices input {
+            margin-right: 10px;
+        }
+        button {
+            background-image: url('924e28cd9aa265267bda9e35790824c1.jpg');
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #a1353d;
+        }
+        nav {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Bollywood Movie Trivia</h1>
+        <div class="question-container">
+            <p class="question">Who played the lead role in the movie "Dilwale Dulhania Le Jayenge"?</p>
+            <ul class="choices">
+                <li><input type="radio" name="answer" value="A"> Shah Rukh Khan</li>
+                <li><input type="radio" name="answer" value="B"> Aamir Khan</li>
+                <li><input type="radio" name="answer" value="C"> Salman Khan</li>
+                <li><input type="radio" name="answer" value="D"> Hrithik Roshan</li>
+            </ul>
+            <button onclick="checkAnswer()">Submit Answer</button>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            let selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (!selectedAnswer) {
+                alert('Please select an answer!');
+                return;
+            }
+            if (selectedAnswer.value === 'A') {
+                alert('Correct! 🎉');
+            } else {
+                alert('Incorrect! The correct answer is Shah Rukh Khan.');
+            }
+        }
+    </script>
+</body>
+</html>
